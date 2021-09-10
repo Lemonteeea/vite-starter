@@ -5,8 +5,8 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
-    "prettier": "prettier ./src/**/*.{js,jsx,vue,ts,tsx,md,json} --write",
-    "lint": "npm run prettier && eslint ./src/**/*.{js,jsx,vue,ts,tsx} --fix"
+    "prettier": "prettier --write ./src/**/*.{js,jsx,vue,ts,tsx,md,json}",
+    "lint": "npm run prettier && eslint --fix ./src/**/*.{js,jsx,vue,ts,tsx} && stylelint --fix ./src/**/*.{css,less,scss,vue}"
   },
   "dependencies": {
     "vue": "^3.2.6"
@@ -25,6 +25,12 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-vue": "^7.17.0",
     "prettier": "^2.4.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.4.0",
+    "stylelint-order": "^4.1.0",
     "typescript": "^4.3.2",
     "vite": "^2.5.4",
     "vue-tsc": "^0.2.2"
