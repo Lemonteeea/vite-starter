@@ -1,6 +1,7 @@
 module.exports = {
   extends: [
     "stylelint-config-standard",
+    "stylelint-config-recommended-vue",
     "stylelint-config-rational-order",
     "stylelint-config-prettier",
   ],
@@ -11,6 +12,18 @@ module.exports = {
   rules: {
     "plugin/declaration-block-no-ignored-properties": true,
     "color-hex-length": "long",
+    "at-rule-no-unknown": [
+      true,
+      {
+        ignoreAtRules: [
+          "tailwind",
+          "apply",
+          "variants",
+          "responsive",
+          "screen",
+        ],
+      },
+    ],
   },
   ignoreFiles: ["**/*.js", "**/*.jsx", "**/*.tsx", "**/*.ts"],
 };
