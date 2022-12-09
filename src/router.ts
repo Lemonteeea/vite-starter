@@ -1,7 +1,7 @@
 import HomePage from "@/views/HomePage.vue";
+import AboutPage from "@/views/AboutPage.vue";
 import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 
-const AboutPage = () => import("@/views/AboutPage.vue");
 const routes = [
   { path: "/", redirect: "/home" },
   { path: "/home", component: HomePage },
