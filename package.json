@@ -7,8 +7,9 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
-    "prettier": "prettier --write ./src/**/*.{js,jsx,vue,ts,tsx,md,json}",
-    "lint": "npm run prettier && eslint --fix ./src/**/*.{js,jsx,vue,ts,tsx} && stylelint --fix ./src/**/*.{css,less,scss,vue}"
+    "lint": "eslint --fix ./src/**/*.{js,jsx,vue,ts,tsx} && npm run lint:style && npm run prettier",
+    "lint:style": " stylelint --fix ./src/**/*.{css,less,scss,vue}",
+    "prettier": "prettier --write ./src/**/*.{js,jsx,vue,ts,tsx,md,json}"
   },
   "dependencies": {
     "pinia": "^2.0.11",
