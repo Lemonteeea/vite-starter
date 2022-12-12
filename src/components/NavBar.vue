@@ -1,9 +1,22 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ElMenu, ElMenuItem } from "element-plus";
+import { ref } from "vue";
+
+const activeIndex = ref("1");
+</script>
 
 <template>
-  <div class="h-12 bg-green-600 flex items-center pl-6 text-white gap-6">
-    🎉 It's very nice of you to be here.
-    <router-link to="home">Home</router-link>
-    <router-link to="about">About</router-link>
-  </div>
+  <ElMenu
+    class="flex items-center select-none px-3"
+    :default-active="activeIndex"
+    mode="horizontal"
+  >
+    🎉
+    <ElMenuItem index="1">
+      <RouterLink to="home">Home</RouterLink>
+    </ElMenuItem>
+    <ElMenuItem index="2">
+      <RouterLink to="about">About</RouterLink>
+    </ElMenuItem>
+  </ElMenu>
 </template>

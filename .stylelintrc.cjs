@@ -1,27 +1,18 @@
 module.exports = {
   extends: [
     "stylelint-config-standard",
+    "stylelint-config-recommended-scss",
     "stylelint-config-recommended-vue",
     "stylelint-config-rational-order",
     "stylelint-config-prettier",
   ],
-  plugins: [
-    "stylelint-order",
-    "stylelint-declaration-block-no-ignored-properties",
-  ],
+  plugins: ["stylelint-order", "stylelint-scss"],
   rules: {
-    "plugin/declaration-block-no-ignored-properties": true,
     "color-hex-length": "long",
-    "at-rule-no-unknown": [
+    "scss/at-rule-no-unknown": [
       true,
       {
-        ignoreAtRules: [
-          "tailwind",
-          "apply",
-          "variants",
-          "responsive",
-          "screen",
-        ],
+        ignoreAtRules: ["tailwind"],
       },
     ],
   },
