@@ -5,6 +5,8 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    ".eslintrc.cjs"
+    ".eslintrc.cjs",
+    "*.ts",
+    "*.cjs"
   ]
 }
