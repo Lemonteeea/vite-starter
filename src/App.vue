@@ -4,7 +4,7 @@ import NavBar from "@/components/NavBar.vue";
 
 <template>
   <NavBar></NavBar>
-  <div class="flex flex-col justify-center text-4xl p-10">
+  <div class="flex flex-col items-center text-xl p-10 gap-3">
     <RouterView></RouterView>
   </div>
 </template>
