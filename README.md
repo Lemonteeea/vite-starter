@@ -7,5 +7,7 @@
 - eslint
 - stylelint
 - prettier
+- vue-router
+- pinia
 
 ### You may find more versions in other branches
