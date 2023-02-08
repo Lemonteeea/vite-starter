@@ -26,4 +26,5 @@ module.exports = {
     ],
   },
   ignoreFiles: ["**/*.js", "**/*.jsx", "**/*.tsx", "**/*.ts"],
+  customSyntax: "postcss-html",
 };
