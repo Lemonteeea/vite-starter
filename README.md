@@ -9,5 +9,6 @@
 - prettier
 - vue-router
 - pinia
+- tailwind css
 
 ### You may find more versions in other branches

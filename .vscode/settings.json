@@ -1,5 +1,8 @@
 {
+  "eslint.format.enable": true,
   "css.validate": false,
   "less.validate": false,
-  "scss.validate": false
+  "scss.validate": false,
+  "stylelint.snippet": ["css", "less", "postcss", "scss"],
+  "stylelint.validate": ["css", "less", "postcss", "scss", "sass", "vue"]
 }
