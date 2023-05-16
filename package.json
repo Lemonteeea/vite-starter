@@ -9,18 +9,18 @@
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "lint": "eslint --fix ./src/**/*.{js,jsx,vue,ts,tsx} && npm run lint:style && npm run prettier",
-    "lint:style": " stylelint --fix ./src/**/*.{css,less,scss,vue}",
+    "lint:style": " stylelint --fix ./src/**/*.{css,less,scss,vue,html}",
     "lint:lint-staged": "lint-staged",
     "prettier": "prettier --write ./src/**/*.{js,jsx,vue,ts,tsx,md,json}"
   },
   "dependencies": {
     "pinia": "^2.0.27",
-    "vue": "^3.2.40",
+    "vue": "^3.2.47",
     "vue-router": "^4.1.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.46.0",
-    "@vitejs/plugin-vue": "^3.2.0",
+    "@vitejs/plugin-vue": "^4.0.0",
     "@vue/compiler-sfc": "^3.2.6",
     "autoprefixer": "^10.4.2",
     "eslint": "^8.29.0",
@@ -33,20 +33,19 @@
     "eslint-plugin-vue": "^9.8.0",
     "husky": "^8.0.2",
     "lint-staged": "^12.5.0",
-    "postcss": "^8.4.7",
+    "postcss": "^8.4.21",
     "postcss-html": "^1.3.0",
     "prettier": "^2.4.0",
-    "stylelint": "^14.16.0",
+    "stylelint": "^14.14.0",
     "stylelint-config-prettier": "^9.0.2",
     "stylelint-config-rational-order": "^0.1.2",
-    "stylelint-config-recommended-vue": "^1.4.0",
-    "stylelint-config-standard": "^29.0.0",
+    "stylelint-config-standard": "~29.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.6.0",
     "stylelint-order": "^5.0.0",
     "tailwindcss": "^3.0.23",
-    "typescript": "^4.9.4",
-    "vite": "^3.2.3",
-    "vue-tsc": "^1.0.12"
+    "typescript": "^4.8.3",
+    "vite": "^4.0.0",
+    "vue-tsc": "^1.2.0"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
