@@ -4,5 +4,6 @@
   "less.validate": false,
   "scss.validate": false,
   "stylelint.snippet": ["css", "less", "postcss", "scss"],
-  "stylelint.validate": ["css", "less", "postcss", "scss", "sass", "vue"]
+  "stylelint.validate": ["css", "less", "postcss", "scss", "sass", "vue"],
+  "cSpell.words": ["stylelint"]
 }
