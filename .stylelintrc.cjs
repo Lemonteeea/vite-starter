@@ -8,6 +8,12 @@ module.exports = {
   plugins: ["stylelint-order"],
   rules: {
     "color-hex-length": "long",
+    "at-rule-no-unknown": [
+      true,
+      {
+        ignoreAtRules: ["tailwind"],
+      },
+    ],
   },
   ignoreFiles: ["**/*.js", "**/*.jsx", "**/*.tsx", "**/*.ts"],
 };
