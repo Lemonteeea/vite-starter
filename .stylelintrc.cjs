@@ -1,19 +1,9 @@
 module.exports = {
   extends: [
-    "stylelint-config-standard",
-    "stylelint-config-recommended-vue",
-    "stylelint-config-rational-order",
-    "stylelint-config-prettier",
+    'stylelint-config-standard',
+    'stylelint-config-recommended-vue',
+    'stylelint-config-idiomatic-order',
   ],
-  plugins: ["stylelint-order"],
-  rules: {
-    "color-hex-length": "long",
-    "at-rule-no-unknown": [
-      true,
-      {
-        ignoreAtRules: ["tailwind"],
-      },
-    ],
-  },
-  ignoreFiles: ["**/*.js", "**/*.jsx", "**/*.tsx", "**/*.ts"],
-};
+  plugins: ['stylelint-order'],
+  ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts', '**/*.json'],
+}

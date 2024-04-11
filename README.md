@@ -2,10 +2,36 @@
 
 ## A template of vite app which contains
 
-- vue3
-- ts
-- eslint
-- stylelint
-- prettier
+- Vue3
+- Typescript
+- Eslint
+- Stylelint
+- Pinia
+- Vue Router
+- Eslint with [@antfu/eslint-config](https://github.com/antfu/eslint-config)
 
-### You may find more versions in other branches
+## Quick Start
+
+### Install Dependence
+
+ ```sh
+pnpm install
+```
+
+### Start a development server
+
+```sh
+pnpm dev
+```
+
+### Build for Production
+
+```sh
+pnpm build
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+pnpm lint
+```

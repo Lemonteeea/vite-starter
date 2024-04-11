@@ -1,12 +1,35 @@
 {
-  "eslint.format.enable": true,
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false,
-  "stylelint.snippet": ["css", "less", "postcss", "scss"],
-  "stylelint.validate": ["css", "less", "postcss", "scss", "sass", "vue"],
-  "cSpell.words": ["stylelint"],
-  "files.associations": {
-    "*.css": "tailwindcss"
-  }
+  // Disable the default formatter, use eslint instead
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  // Enable the ESlint flat config support
+  "eslint.experimental.useFlatConfig": true,
+  // Auto fix
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  // Enable eslint for all supported languages
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml",
+    "gql",
+    "graphql"
+  ],
+
+  "cSpell.words": [
+    "antfu",
+    "pinia",
+    "stylelint",
+    "Vite"
+  ]
 }
