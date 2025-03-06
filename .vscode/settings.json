@@ -6,7 +6,8 @@
   "eslint.useFlatConfig": true,
   // Auto fix
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
+    // Audo fix all，include Eslint and Stylelint
+    "source.fixAll": "explicit",
     "source.organizeImports": "never"
   },
   // Enable eslint for all supported languages
@@ -22,9 +23,23 @@
     "jsonc",
     "yaml",
     "toml",
+    "xml",
     "gql",
-    "graphql"
+    "graphql",
+    "astro",
+    "svelte",
+    "css",
+    "less",
+    "scss",
+    "pcss",
+    "postcss"
   ],
+
+  // Stylelint
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": ["vue", "css", "less", "scss", "postcss"],
 
   "cSpell.words": [
     "antfu",

@@ -8,8 +8,8 @@
 @media (width >= 1024px) {
   .about {
     display: flex;
-    min-height: 100vh;
     align-items: center;
+    min-height: 100vh;
   }
 }
 </style>

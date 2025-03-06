@@ -1,7 +1,10 @@
 {
   "recommendations": [
-    "Vue.volar",
+    "vue.volar",
     "dbaeumer.vscode-eslint",
-    "stylelint.vscode-stylelint"
+    "stylelint.vscode-stylelint",
+    "wayou.vscode-todo-highlight",
+    "editorconfig.editorconfig",
+    "streetsidesoftware.code-spell-checker"
   ]
 }
